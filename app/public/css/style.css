@@ -1,0 +1,453 @@
+
+
+#square {
+  position: relative;
+    width: 800px;
+    height: 450px;
+  display: block;
+  margin: auto;
+    background: #F3F6F8;
+  z-index: 3;
+}
+    
+#leftSquare {
+    width: 40%;
+  display: block;
+  margin:  auto;
+    height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+    background:linear-gradient(
+      rgba(251, 139, 166, 0.70),
+      rgba(224, 140, 194, 0.8),
+      rgba(194,139,228, 0.9)
+    ),  url("https://images.pexels.com/photos/1852/dawn-landscape-mountains-nature.jpg?h=350&auto=compress");
+  background-size: cover;
+  border-radius: 0%;
+  z-index: 1;
+}
+
+#rightSquare {
+    width: 60%;
+  display: block;
+  margin:  auto;
+    height: 100%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+    background:none;
+  background-size: cover;
+  border-radius: 0%;
+  z-index: 1;
+}
+
+#circle{
+    border-radius: 50%;
+    width: 60%;
+    height: 40%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 8%;
+    right: 20%;
+  }
+
+.brand{
+  position: absolute;
+  display: block;
+  top: 38%;
+  left: 25%;
+  margin: auto;
+  width: 50%;
+  height: 60%;
+  z-index: 1;
+  
+}
+
+#title{
+  position: absolute;
+  left: 21%;
+  bottom: 37%;
+  color: white;
+  font-family:"lato";
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  z-index: 3;
+}
+#subtitle{
+  position: absolute;
+  left: 7%;
+  bottom: 32%;
+  color: white;
+  font-family:"lato";
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 3;
+}
+
+#container{
+  
+    margin-top: 15%;
+}
+
+.signup{
+  color: rgb(228, 162, 208);
+  font-family:"lato";
+  font-size: 2em;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.button{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+#twitter{
+  
+  padding-left: 10px;
+}
+
+#footer{
+  display: block;
+  margin: auto;
+  color: #333333;
+  font-family:"lato";
+  font-size: 10px;
+  font-weight: 400;
+  text-align: center;
+  z-index: 3;
+}
+
+#terms{
+  cursor: pointer;
+  color: #FBADC1;
+}
+
+
+form{
+  
+  padding: 20px 0;
+  position: relative;
+}
+
+.optin{
+  
+   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 75%;
+  margin: auto;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 18px;
+  color: #333333;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  font-weight: 300;
+  
+  
+}
+.optin:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.optin:focus {
+  background-color: white;
+  width: 90%;
+  color: #CD98E3;
+}
+
+
+
+
+/*CSS CODES FROM PURE CSS FRAMEWORK===============================================*/
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    color: #333;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+
+
+/*
+ * -- HELPER STYLES --
+ * Over-riding some of the .pure-button styles to make my buttons look unique
+ */
+.primary-button,
+.secondary-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 20px;
+}
+.primary-button {
+    color: #fff;
+    background: #1b98f8;
+    margin: 1em 0;
+}
+.secondary-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.5em 2em;
+    font-size: 80%;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * This layout consists of three main elements, `#nav` (navigation bar), `#list` (email list), and `#main` (email content). All 3 elements are within `#layout`
+ */
+#layout, #nav, #list, #main {
+    margin: 0;
+    padding: 0;
+}
+
+/* Make the navigation 100% width on phones */
+#nav {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: rgb(37, 42, 58);
+    text-align: center;
+}
+/* Show the "Menu" button on phones */
+#nav .nav-menu-button {
+    display: block;
+    top: 0.5em;
+    right: 0.5em;
+    position: relative;
+}
+
+/* When "Menu" is clicked, the navbar should be 80% height */
+#nav.active {
+    height: 80%;
+}
+/* Don't show the navigation items... */
+.nav-inner {
+    display: none;
+}
+
+/* ...until the "Menu" button is clicked */
+#nav.active .nav-inner {
+    display: block;
+    padding: 2em 0;
+}
+
+
+/*
+ * -- NAV BAR STYLES --
+ * Styling the default .pure-menu to look a little more unique.
+ */
+#nav .pure-menu {
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+    #nav .pure-menu-link:hover,
+    #nav .pure-menu-link:focus {
+        background: rgb(55, 60, 90);
+    }
+    #nav .pure-menu-link {
+        color: #fff;
+        margin-left: 0.5em;
+    }
+    #nav .pure-menu-heading {
+        border-bottom: none;
+        font-size:110%;
+        color: rgb(75, 113, 151);
+    }
+
+
+/*
+ * -- EMAIL STYLES --
+ * Styles relevant to the email messages, labels, counts, and more.
+ */
+.email-count {
+    color: rgb(75, 113, 151);
+}
+
+.email-label-personal,
+.email-label-work,
+.email-label-travel {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 0.5em;
+    border-radius: 3px;
+}
+.email-label-personal {
+    background: #ffc94c;
+}
+.email-label-work {
+    background: #41ccb4;
+}
+.email-label-travel {
+    background: #40c365;
+}
+
+
+/* Email Item Styles */
+.email-item {
+    padding: 0.9em 1em;
+    border-bottom: 1px solid #ddd;
+    border-left: 6px solid transparent;
+}
+    .email-avatar {
+        border-radius: 3px;
+        margin-right: 0.5em;
+    }
+    .email-name,
+    .email-subject {
+        margin: 0;
+    }
+    .email-name {
+        text-transform: uppercase;
+        color: #999;
+    }
+    .email-desc {
+        font-size: 80%;
+        margin: 0.4em 0;
+    }
+
+.email-item-selected {
+    background: #eee;
+}
+.email-item-unread {
+    border-left: 6px solid #1b98f8;
+}
+
+/* Email Content Styles */
+.email-content-header, .email-content-body, .email-content-footer {
+    padding: 1em 2em;
+}
+    .email-content-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .email-content-title {
+            margin: 0.5em 0 0;
+        }
+        .email-content-subtitle {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+            .email-content-subtitle span {
+                color: #999;
+            }
+    .email-content-controls {
+        margin-top: 2em;
+        text-align: right;
+    }
+        .email-content-controls .secondary-button {
+            margin-bottom: 0.3em;
+        }
+
+    .email-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 40em) {
+
+    /* Move the layout over so we can fit the nav + list in on the left */
+    #layout {
+        padding-left:0px; /* "left col (nav + list)" width */
+        height: 550px;
+        position: relative;
+    }
+
+    /* These are position:relative elements that will be in the left 500px of the screen */
+    #nav, #list {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        overflow: auto;
+    }
+    #nav {
+        margin-left:0px; /* "left col (nav + list)" width */
+        width:auto;
+        height: 100%;
+    }
+
+    /* Show the menu items on the larger screen */
+    .nav-inner {
+        display: block;
+        padding: 2em 0;
+    }
+
+    /* Hide the "Menu" button on larger screens */
+    #nav .nav-menu-button {
+        display: none;
+    }
+
+    #list {
+        margin-left: 0px;
+        width: 100%;
+        height: 33%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #main {
+        position: relative;
+        top: 33%;
+        right: 0;
+        bottom: 0;
+        left: 150px;
+        overflow: auto;
+        width: auto; /* so that it's not 100% */
+    }
+
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 60em) {
+
+    /* This will take up the entire height, and be a little thinner */
+    #list {
+        margin-left: 0px;
+        width:30%;
+        height: 550px;
+        border-right: 1px solid #ddd;
+    }
+
+    /* This will now take up it's own column, so don't need position: fixed; */
+    #main {
+        position: static;
+        width:70%;
+        margin: 0;
+        padding: 0;
+    }
+}
